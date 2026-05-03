@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export",
-    "deploy": "pnpm run export && pnpm exec gh-pages -d out -b gh-pages",
+    "export": "next build",
+    "deploy": "pnpm run export && pnpm exec gh-pages -d out -b gh-pages -t",
     "start": "next start",
     "lint": "eslint ."
   },
